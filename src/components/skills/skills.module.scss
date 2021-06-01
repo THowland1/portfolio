@@ -1,0 +1,57 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+
+@mixin skills-background {
+  background-color: $primary-dark;
+}
+
+.skills-heading {
+  font-size: $text-lg;
+}
+
+.skills {
+  @include skills-background;
+  color: white;
+  font-family: 'Lato';
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-content {
+  margin: auto;
+  max-width: 60rem;
+  font-size: $text-xl;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.skill-level {
+  margin: 2rem 0;
+}
+
+.skills-tagline {
+  font-size: $text-sm;
+  max-width: 40rem;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+}
+
+.skills-subheading {
+  font-size: $text-sm;
+  margin: 1rem 0;
+}
+
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  display: inline-block;
+}

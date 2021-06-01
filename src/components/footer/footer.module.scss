@@ -1,0 +1,81 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+
+.footer {
+  background-color: $primary-dark;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: $text-xs;
+
+  > * {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.subheading {
+  margin-bottom: 0.5rem;
+}
+
+.icon-biblio {
+  .icon-reference {
+    margin: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.social-link {
+  border-radius: $infinity;
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+
+  border: solid 1px white;
+  display: inline-block;
+
+  position: relative;
+  margin: 0.25rem;
+
+  transition: transform 0.15s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.social-link-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  background: black;
+  background: var(--background);
+
+  transition: opacity 0.15s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.social-method-icon {
+  height: 100%;
+}
+
+.social-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: auto;
+
+  pointer-events: none;
+}

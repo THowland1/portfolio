@@ -1,0 +1,60 @@
+@import 'src/styles/typography';
+
+@mixin header-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+}
+
+@mixin header_text-font {
+  font-family: 'Lato';
+  font-size: 4rem;
+}
+
+@mixin header_text-positioning {
+  grid-column: 1 / end;
+  text-align: center;
+  padding: 2rem;
+
+  @media only screen and (min-width: 500px) {
+    grid-column: 2;
+    text-align: left;
+  }
+
+  @media only screen and (min-width: 700px) {
+  }
+
+  @media only screen and (min-width: 1000px) {
+  }
+}
+
+.header {
+  @include header-layout;
+  height: 100vh;
+  color: white;
+}
+
+.header_text {
+  @include header_text-font;
+  @include header_text-positioning;
+}
+
+.cursive {
+  font-family: 'Dancing Script';
+}
+
+.scroll-message {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 3rem;
+  font-size: $text-xs;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $text-light--faded;
+}

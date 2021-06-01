@@ -1,0 +1,12 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+  .section {
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+  }
+  .section.visible {
+    opacity: 1;
+    transform: none;
+  }
+}

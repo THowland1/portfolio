@@ -1,0 +1,39 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/shadows';
+
+.badge {
+  background-color: $primary-mid;
+  box-shadow: $shadow-4;
+
+  display: flex;
+  border-radius: 0.25em;
+  padding: 0.15em;
+  margin: 0.3em;
+
+  font-size: $text-sm;
+
+  &.small {
+    font-size: $text-xs;
+  }
+}
+
+.icon {
+  background-color: white;
+  border-radius: 0.25rem;
+  height: 1.25em;
+  width: 1.25em;
+}
+.name {
+  text-align: center;
+  min-width: 7em;
+  padding: 0 0.5em;
+}
+
+.badge.rounded {
+  border-radius: $infinity;
+  .icon {
+    border-radius: $infinity;
+  }
+}

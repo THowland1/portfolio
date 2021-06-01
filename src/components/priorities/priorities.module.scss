@@ -1,0 +1,58 @@
+@import 'src/styles/breakpoints';
+@import 'src/styles/typography';
+@import 'src/styles/variables';
+@import 'src/styles/shadows';
+
+.priorities {
+  color: $text-dark;
+  position: relative;
+}
+
+.content {
+  margin: auto;
+  max-width: 70rem;
+  font-family: 'Lato';
+  font-size: $text-md;
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  @include mobile-to-tablet {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.priority-card {
+  box-shadow: $shadow-1;
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  position: relative;
+  padding-left: 2.5em;
+  margin: 0.5em;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.priority-card-heading {
+  font-size: $text-sm;
+  font-weight: 600;
+}
+
+.priority-card-icon {
+  background-color: white;
+  border-radius: $infinity;
+  box-shadow: $shadow-1;
+  height: 3em;
+  width: 3em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -1.5em;
+}
+
+.priority-card-description {
+  font-size: $text-sm;
+}

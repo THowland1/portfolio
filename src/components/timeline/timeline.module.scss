@@ -1,0 +1,49 @@
+@import 'src/styles/typography';
+
+.timeline {
+  position: relative;
+  color: $text-light;
+}
+
+.timeline-content {
+  max-width: 70rem;
+  margin: auto;
+
+  font-size: $text-md;
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 3rem;
+  grid-template-columns: auto 1fr;
+
+  padding: 4rem 2rem;
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.time-range {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.role-name {
+  margin-left: 1rem;
+  font-weight: 300;
+}
+
+.company-name {
+  font-weight: 700;
+}
+
+.blur-background {
+  backdrop-filter: blur(4px);
+}
+
+.heading {
+  font-size: $text-xl;
+  font-weight: 600;
+
+  display: inline-block;
+}
