@@ -52,10 +52,11 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
+          include: /\.inline\.svg$/,
+        },
+      },
     },
-    'gatsby-plugin-offline',
+    "gatsby-plugin-offline",
+    "gatsby-plugin-react-helmet",
   ],
 };
